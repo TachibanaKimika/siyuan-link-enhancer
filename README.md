@@ -1,20 +1,37 @@
 [中文](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md)
+# URL Title Enhancer Plugin for SiYuan
 
-# SiYuan plugin sample
+## Introduction
+The URL Title Enhancer plugin transforms your pasted URLs into meaningful links with page titles. When you paste a URL directly into SiYuan, this plugin automatically fetches the page title and converts the plain URL into a properly formatted link displaying the title instead of the raw URL.
 
-## Get started
+## Features
+- Automatically detects when URLs are pasted
+- Fetches the webpage title in real-time
+- Converts plain URLs into formatted links with proper title text
+- Falls back to the raw URL if title cannot be retrieved
+- Works with any valid URL format
 
-* Make a copy of this repo as a template with the <kbd>Use this template</kbd> button, please note that the repo name
-  must be the same as the plugin name, the default branch must be `main`
-* Clone your repo to a local development folder. For convenience, you can place this folder in
-  your `{workspace}/data/plugins/` folder
-* Install [NodeJS](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation), then run `pnpm i` in the
-  command line under your repo folder
+## How to Use
+Simply copy any URL and paste it into your SiYuan note. The plugin automatically converts it to a link with the page's title.
+
+For example:
+1. Copy a URL like `https://github.com/siyuan-note/siyuan`
+2. Paste it into your SiYuan note
+3. The plugin automatically converts it to a link showing "SiYuan - A privacy-first, self-hosted personal knowledge management software" (or the current title of that page)
+
+## Installation
+* Download the plugin from the SiYuan Marketplace
+* Enable it in the downloaded tab
+* No configuration needed - it works out of the box
+
+## Development
+* Clone this repo to your local development folder
+* Install [NodeJS](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation)
+* Run `pnpm i` in the command line under your repo folder
 * Execute `pnpm run dev` for real-time compilation
 * Open SiYuan marketplace and enable plugin in downloaded tab
 
-## Development
-
+### Development Files
 * i18n/*
 * icon.png (160*160)
 * index.css
@@ -22,23 +39,11 @@
 * plugin.json
 * preview.png (1024*768)
 * README*.md
-* [Fontend API](https://github.com/siyuan-note/petal)
+* [Frontend API](https://github.com/siyuan-note/petal)
 * [Backend API](https://github.com/siyuan-note/siyuan/blob/master/API.md)
 
-## I18n
-
-In terms of internationalization, our main consideration is to support multiple languages. Specifically, we need to
-complete the following tasks:
-
-* Meta information about the plugin itself, such as plugin description and readme
-    * `description` and `readme` fields in plugin.json, and the corresponding README*.md file
-* Text used in the plugin, such as button text and tooltips
-    * src/i18n/*.json language configuration files
-    * Use `this.i18.key` to get the text in the code
-* Finally, declare the language supported by the plugin in the `i18n` field in plugin.json
-
-It is recommended that the plugin supports at least English and Simplified Chinese, so that more people can use it more
-conveniently.
+## I18n and Language Support
+This plugin supports both English and Simplified Chinese languages.
 
 ## plugin.json
 
