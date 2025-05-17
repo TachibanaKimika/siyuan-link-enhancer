@@ -21,12 +21,12 @@
     "desktop-window"
   ],
   "displayName": {
-    "default": "Plugin Sample",
-    "zh_CN": "插件示例"
+    "default": "URL Title Enhancer",
+    "zh_CN": "URL标题增强"
   },
   "description": {
-    "default": "This is a plugin sample",
-    "zh_CN": "这是一个插件示例"
+    "default": "Automatically converts pasted URLs into links with their page titles",
+    "zh_CN": "自动将粘贴的URL转换为带有页面标题的链接"
   },
   "readme": {
     "default": "README.md",
@@ -41,7 +41,13 @@
     ]
   },
   "keywords": [
-    "sample",
-    "示例"
+    "url",
+    "link",
+    "title",
+    "paste",
+    "URL",
+    "链接",
+    "标题",
+    "粘贴"
   ]
 }
