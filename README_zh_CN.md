@@ -1,4 +1,4 @@
-[English](https://github.com/siyuan-note/plugin-sample/blob/main/README.md)
+[English](./README.md)
 # 思源笔记 URL 标题增强插件
 
 > Created by Claude 3.7 Sonnet

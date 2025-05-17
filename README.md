@@ -1,4 +1,4 @@
-[中文](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md)
+[中文](./README_zh_CN.md)
 # URL Title Enhancer Plugin for SiYuan
 
 > Created by Claude 3.7 Sonnet
